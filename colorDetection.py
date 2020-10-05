@@ -26,4 +26,3 @@ while True:
     cv2.imshow("Red", red)
     cv2.imshow("Blue", blue)
     cv2.imshow("Green", green)
-    
