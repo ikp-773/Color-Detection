@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-cap = cv2.VideoCapture('test.mp4')
+cap = cv2.VideoCapture("test.mp4")
 
 while True:
     _, frame = cap.read()
@@ -26,3 +26,7 @@ while True:
     cv2.imshow("Red", red)
     cv2.imshow("Blue", blue)
     cv2.imshow("Green", green)
+
+    key = cv2.waitKey(5)
+    if key == 27:
+        break
